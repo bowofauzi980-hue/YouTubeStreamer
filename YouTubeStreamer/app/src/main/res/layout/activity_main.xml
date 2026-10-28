@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#121212">
+
+    <!-- Judul Aplikasi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YouTube Live Streamer"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Kolom RTMP URL -->
+    <EditText
+        android:id="@+id/etRtmpUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="RTMP URL (Contoh: rtmp://a.rtmp.youtube.com/live2)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:text="rtmp://a.rtmp.youtube.com/live2"
+        android:inputType="textUri"
+        android:layout_marginBottom="15dp"
+        android:padding="12dp"
+        android:background="#1E1E1E" />
+
+    <!-- Kolom Stream Key -->
+    <EditText
+        android:id="@+id/etStreamKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan YouTube Stream Key Anda"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:inputType="textPassword"
+        android:layout_marginBottom="30dp"
+        android:padding="12dp"
+        android:background="#1E1E1E" />
+
+    <!-- Tombol Mulai/Hentikan Live -->
+    <Button
+        android:id="@+id/btnMulaiLive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MULAI LIVE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#E50914"
+        android:textColor="#FFFFFF"
+        android:padding="15dp" />
+
+</LinearLayout>
